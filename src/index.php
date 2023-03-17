@@ -7,11 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Todo List</title>
 
-  <link href="./assets/light-theme.css" rel="stylesheet" />
-  <link href="./assets/dark-theme.css" rel="stylesheet" />
+  <link defer href="./assets/light-theme.css" rel="stylesheet" />
+  <link defer href="./assets/dark-theme.css" rel="stylesheet" />
+
+  <script defer src="./assets/main.js"></script>
 </head>
 
-<body class="dark-mode">
+<body>
   <main class="app">
     <?php include_once('./components/header.php') ?>
     <section class="app__content">
@@ -19,8 +21,6 @@
       <?php include_once('./components/list.php') ?>
     </section>
   </main>
-
-  <script src="./assets/main.js"></script>
 </body>
 
 </html>

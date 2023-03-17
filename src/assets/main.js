@@ -68,14 +68,22 @@ function updateToggleButton() {
   }
 }
 
-document.addEventListener('DOMContentLoaded', updateToggleButton);
-
 function toggleTheme() {
   if (isInDarkMode()) {
     document.body.classList.remove(DARK_THEME_CLASS_NAME);
   } else {
     document.body.classList.add(DARK_THEME_CLASS_NAME);
   }
-
+  
   updateToggleButton();
 }
+
+function main() {
+  const browserDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  if (browserDarkMode) {
+    toggleTheme();
+  }
+}
+
+main();
