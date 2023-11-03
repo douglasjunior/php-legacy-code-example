@@ -30,7 +30,7 @@ body,
   flex-direction: row;
 }
 
-.app__header button {
+.app__header .app__header--toggle-theme {
   background-color: #fff;
   padding: 5px;
   font-size: 16px;
@@ -45,8 +45,8 @@ body,
   cursor: pointer;
 }
 
-.app__header button:hover {
-  background-color: #f5f5f5;
+.app__header .app__header--toggle-theme:hover {
+  background-color: #b6b6b6;
 }
 
 .app__content {
